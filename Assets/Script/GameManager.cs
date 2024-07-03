@@ -87,21 +87,21 @@ public class GameManager : MonoBehaviour
                 score1 += newScore; //게임이 진행중일때만 점수를 더하게 됨
                 PlayerPrefs.SetInt("score1", score1);
                 //SoundManager.Instance.PlaySound("score");
-                scoreText.text = "Score : " + score1;
+                scoreText.text = "score : " + score1;
             }
             else if (SceneManager.GetActiveScene().name == "Stage2")
             {
                 score2 += newScore; //게임이 진행중일때만 점수를 더하게 됨
                 PlayerPrefs.SetInt("score2", score2);
                 //SoundManager.Instance.PlaySound("score");
-                scoreText.text = "Score : " + score2;
+                scoreText.text = "score : " + score2;
             }
             else if (SceneManager.GetActiveScene().name == "Stage3")
             {
                 score3 += newScore; //게임이 진행중일때만 점수를 더하게 됨
                 PlayerPrefs.SetInt("score3", score3);
                 //SoundManager.Instance.PlaySound("score");
-                scoreText.text = "Score : " + score3;
+                scoreText.text = "score : " + score3;
             }
         }
     }
@@ -115,21 +115,21 @@ public class GameManager : MonoBehaviour
                 score1 -= newScore; //게임이 진행중일때만 점수를 빼게 됨
                 PlayerPrefs.SetInt("score1", score1);
                 SoundManager.Instance.PlaySound("subscore");
-                scoreText.text = "Score : " + score1;
+                scoreText.text = "score : " + score1;
             }
             else if (SceneManager.GetActiveScene().name == "Stage2")
             {
                 score2 -= newScore; //게임이 진행중일때만 점수를 빼게 됨
                 PlayerPrefs.SetInt("score2", score2);
                 SoundManager.Instance.PlaySound("subscore");
-                scoreText.text = "Score : " + score2;
+                scoreText.text = "score : " + score2;
             }
             else if (SceneManager.GetActiveScene().name == "Stage3")
             {
                 score3 -= newScore; //게임이 진행중일때만 점수를 빼게 됨
                 PlayerPrefs.SetInt("score3", score3);
                 SoundManager.Instance.PlaySound("subscore");
-                scoreText.text = "Score : " + score3;
+                scoreText.text = "score : " + score3;
             }
         }
     }
@@ -156,7 +156,7 @@ public class GameManager : MonoBehaviour
         else
         {
             bestScore.color = Color.blue;
-            bestScore.fontSize = 25;
+            bestScore.fontSize = 30;
             Debug.Log("s1-");
             bestScore.text = "1Best Score : " + Get_1BestScore();
         }

@@ -16,6 +16,7 @@ public class ButtonManager : MonoBehaviour
     public GameObject t1;
     public GameObject t2;
     public GameObject t3;
+    public GameObject t4;
 
     public void OpenMenu() //메뉴버튼을 누른 경우 메뉴팝업 활성화
     {
@@ -87,6 +88,11 @@ public class ButtonManager : MonoBehaviour
     {
         t3.SetActive(true);
         t2.SetActive(false);
+    }
+    public void OpenT4()
+    {
+        t4.SetActive(true);
+        t3.SetActive(false);
     }
 
 }

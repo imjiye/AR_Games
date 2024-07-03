@@ -34,12 +34,12 @@ public class StageManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(PlayerPrefs.GetInt("1Bestscore") >= 85)
+        if(PlayerPrefs.GetInt("1Bestscore") >= 100)
         {
             UnLock2Botton();
         }
         
-        if(PlayerPrefs.GetInt("2Bestscore") >= 120)
+        if(PlayerPrefs.GetInt("2Bestscore") >= 150)
         {
             UnLock3Botton();
         }
