@@ -83,16 +83,19 @@ public class ButtonManager : MonoBehaviour
     {
         t2.SetActive(true);
         t1.SetActive(false);
+        TextManager.instance.Text2();
     }
     public void OpenT3()
     {
         t3.SetActive(true);
         t2.SetActive(false);
+        TextManager.instance.Text3();
     }
     public void OpenT4()
     {
         t4.SetActive(true);
         t3.SetActive(false);
+        TextManager.instance.Text4();
     }
 
 }
